@@ -34,13 +34,16 @@ nav a {
     text-decoration: none;
 }
 
-/*Home*/
+/*Home (parte1)*/
 #home {
-    background: linear-gradient(to right, #000000, #000000, #571089, #571089);
-    height: 70vh;
     width: 100%;
+}
+
+.gradiente {
     display: flex;
     align-items: center;
+    height: 70vh;
+    background: linear-gradient(to right, #000000, #000000, #571089, #571089);
 }
 
 .box-home {
@@ -62,9 +65,57 @@ nav a {
 
 .box-home button {
     font-size: 17px;
+    background-color: #fff;
     color: #571089;
     border-radius: 15px;
     margin-top: 5%;
-    height: 50px;
-    width: 160px;    
+    height: 45px;
+    width: 145px;      
+}
+
+/*Home (parte2)*/
+.sobre-vivo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 80px;
+}
+
+.texto-vivo {
+    font-family: 'Calibri', sans-serif;
+    width: 50%;
+}
+
+.texto-vivo h1 {
+    color: #571089;
+    font-size: 60px;
+}
+
+.texto-vivo p {
+    font-size: 23px;
+}
+
+.imagens-vivo {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, min-content); /* Ajusta as colunas ao tamanho do conteúdo */
+    gap: 15px; 
+}
+
+.imagens-vivo img {
+    width: 225px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-vivo button {
+    font-size: 17px;
+    background-color: #571089;
+    color: #fff;
+    border-radius: 15px;
+    margin-top: 5%;
+    height: 45px;
+    width: 145px;       
 }
