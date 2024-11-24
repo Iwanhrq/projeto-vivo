@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Variáveis para o hambúrguer e menu de navegação
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const navList = document.getElementById("nav-list");
+
+    // Ação para exibir/ocultar o menu de navegação ao clicar no hambúrguer
+    hamburgerMenu.addEventListener("click", () => {
+        navList.classList.toggle("active");  // Adiciona ou remove a classe 'active' no menu
+    });
+
+    // Código existente para o card de "ODS" (sem mudanças)
     const images = document.querySelectorAll(".ods-img");
     const card = document.getElementById("ods-card");
     const cardImg = document.getElementById("card-img");

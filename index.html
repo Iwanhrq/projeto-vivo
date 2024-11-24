@@ -15,7 +15,12 @@
             <img src="assets/logo.png" alt="Logo do site">
         </div>
         <nav>
-            <ul>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul id="nav-list">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#ods">ODS</a></li>
                 <li><a href="#estatisticas">Estatísticas</a></li>
@@ -24,36 +29,40 @@
         </nav>
     </header>
 
+
+
     <section id="home">
         <div class="gradiente">
             <div class="box-home">
                 <h3>FUNDAÇÃO TELEFÔNICA VIVO</h3>
                 <h1>DESAFIO DOS DADOS</h1>
                 <p>
-                    O Desafio dos Dados da Vivo busca soluções inovadoras com IA e análise de dados, <br>otimizando
+                    O Desafio dos Dados da Vivo busca soluções inovadoras com IA e análise de dados, otimizando
                     serviços e a experiência dos clientes.
                 </p>
                 <button>Saiba Mais!</button>
-             </div>
+            </div>
         </div>
-    
-        <section class="sobre-vivo">
-            <div class="texto-vivo">
-                <h1>VIVO</h1>
-                <p>
-                    A Vivo é líder em conectividade no Brasil, atendendo milhões de pessoas com serviços de qualidade e
-                    inovação. Com infraestrutura de ponta, é responsável por uma das maiores redes de fibra ótica da América
-                    Latina e pela cobertura móvel 4G mais abrangente do território nacional.
-                </p>
-                <button>Saiba Mais!</button>
-            </div>
-            <div class="imagens-vivo">
-                <img src="/assets/provisorio.png" alt="Rede de fibra ótica">
-                <img src="/assets/provisorio.png" alt="Cobertura móvel 4G">
-                <img src="/assets/provisorio.png" alt="Clientes satisfeitos">
-                <img src="/assets/provisorio.png" alt="Conectividade">
-            </div>
-        </section>
+    </section>
+
+
+    <section class="sobre-vivo">
+        <div class="texto-vivo">
+            <h1>VIVO</h1>
+            <p>
+                A Vivo é líder em conectividade no Brasil, atendendo milhões de pessoas com serviços de qualidade e
+                inovação. Com infraestrutura de ponta, é responsável por uma das maiores redes de fibra ótica da América
+                Latina e pela cobertura móvel 4G mais abrangente do território nacional.
+            </p>
+            <button>Saiba Mais!</button>
+        </div>
+        <div class="imagens-vivo">
+            <img src="/assets/provisorio.png" alt="Rede de fibra ótica">
+            <img src="/assets/provisorio.png" alt="Cobertura móvel 4G">
+            <img src="/assets/provisorio.png" alt="Clientes satisfeitos">
+            <img src="/assets/provisorio.png" alt="Conectividade">
+        </div>
+    </section>
     </section>
 
     <!-- Overlay que será mostrado ao abrir o card -->
@@ -67,13 +76,18 @@
             <img src="/assets/ods9.svg" alt="Cobertura móvel 4G" class="ods-img" data-id="ods9">
             <img src="/assets/ods10.svg" alt="Clientes satisfeitos" class="ods-img" data-id="ods10">
         </div>
-    
+
         <div class="ods-card" id="ods-card">
             <img src="" alt="" id="card-img">
             <div class="card-info" id="card-info"></div>
             <button class="close-btn" id="close-btn">Fechar</button>
         </div>
     </section>
+
+
+
+
+
 </body>
 
 </html>
