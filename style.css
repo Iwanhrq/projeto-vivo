@@ -341,6 +341,11 @@ nav a {
     .imagens-ods img {
         width: 300px;
     }
+
+    /*card*/
+    .ods-card {
+        width: 380px;
+    }
 }
 
 
