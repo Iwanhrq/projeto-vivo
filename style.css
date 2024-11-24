@@ -5,8 +5,6 @@
 }
 
 
-
-
 /*Cabeçalho*/
 header {
     width: 100%;
@@ -18,7 +16,7 @@ header {
 }
 
 .logo img {
-    max-height: 40px; /* Ajuste conforme necessário */
+    max-height: 40px; 
 }
 
 nav ul {
@@ -75,10 +73,9 @@ nav a {
 
 /*Home (parte2)*/
 .sobre-vivo {
+    padding: 5%;
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 80px;
 }
 
 .texto-vivo {
@@ -89,7 +86,20 @@ nav a {
 .texto-vivo h1 {
     color: #571089;
     font-size: 60px;
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
 }
+
+.texto-vivo h1::after {
+    content: ""; /* Cria a linha abaixo do texto */
+    display: block;
+    width: 60%; 
+    height: 7px;
+    background-color: #571089;
+    margin-bottom: 3%;
+}
+
+
+
 
 .texto-vivo p {
     font-size: 23px;
@@ -118,4 +128,97 @@ nav a {
     margin-top: 5%;
     height: 45px;
     width: 145px;       
+}
+
+/*ODS*/
+#ods {
+    padding: 5%;
+    width: 100%;
+    height: 100vh;
+}
+
+
+#ods h1 {
+    font-family: 'Calibri', sans-serif;
+    color: #571089;
+    font-size: 60px;
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+}
+
+#ods h1::after {
+    content: ""; /* Cria a linha abaixo do texto */
+    display: block;
+    width: 60%; /* Faz a linha ser mais larga que o texto (ajuste conforme necessário) */
+    height: 7px;
+    background-color: #571089; 
+    margin-bottom: 8%;
+}
+
+.imagens-ods {
+    display: flex;
+    justify-content: center; 
+    gap: 50px; 
+}
+
+.imagens-ods img {
+    width: 350px; 
+    height: auto; /* Mantém a proporção original */
+}
+
+.imagens-ods img:hover {
+    transform: scale(1.1);
+}
+
+
+/*card*/
+/* Fundo cinza semi-transparente */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Cor cinza com opacidade */
+    z-index: 900; /* Camada abaixo do card */
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
+}
+
+.ods-card {
+    font-family: 'Calibri', sans-serif;
+    font-size: 20px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: #fff;
+    border-radius: 16px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.ods-card img {
+    width: 300px;
+    margin-top: -100px;
+}
+
+.card-info {
+    background-color: white;
+    padding: 20px;
+}
+
+.close-btn {
+    margin: 10px;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.close-btn:hover {
+    background-color: #d32f2f;
 }

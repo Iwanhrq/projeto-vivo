@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Site Vivo</title>
 </head>
 
@@ -54,11 +55,25 @@
             </div>
         </section>
     </section>
+
+    <!-- Overlay que será mostrado ao abrir o card -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Seção de Objetivos de Desenvolvimento Sustentável (ODS) -->
+    <section id="ods">
+        <h1>Objetivos de Desenvolvimento <br>Sustentável</h1>
+        <div class="imagens-ods">
+            <img src="/assets/ods8.svg" alt="Rede de fibra ótica" class="ods-img" data-id="ods8">
+            <img src="/assets/ods9.svg" alt="Cobertura móvel 4G" class="ods-img" data-id="ods9">
+            <img src="/assets/ods10.svg" alt="Clientes satisfeitos" class="ods-img" data-id="ods10">
+        </div>
     
-
-
-
-
+        <div class="ods-card" id="ods-card">
+            <img src="" alt="" id="card-img">
+            <div class="card-info" id="card-info"></div>
+            <button class="close-btn" id="close-btn">Fechar</button>
+        </div>
+    </section>
 </body>
 
 </html>
