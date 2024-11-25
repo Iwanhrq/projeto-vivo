@@ -1,6 +1,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }
@@ -261,6 +262,7 @@ nav a {
 #estatisticas p {
     width: 50%;
     font-size: 23px;
+    padding-bottom: 5%;
 }
 
 #estatisticas h1::after {
