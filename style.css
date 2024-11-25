@@ -324,6 +324,10 @@ nav a {
         padding-top: 10%;
     }
 
+    .texto-vivo h1{
+        font-size: 50px;
+    }
+
     .imagens-vivo {
         display: flex; 
         justify-content: flex-start; 
@@ -378,9 +382,12 @@ nav a {
     }
 
     /*Estatisticas*/
-
-    #estatisticas {
+    #estatisticas {      
         margin-top: 20%;
+    }
+
+    #estatisticas h1 {
+        font-size: 50px;
     }
 
     #estatisticas p {
