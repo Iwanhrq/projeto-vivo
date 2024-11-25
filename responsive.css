@@ -1,0 +1,144 @@
+@media (min-width: 300px) and (max-width: 768px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  #nav-list {
+    display: none; /* Esconde o menu inicialmente */
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #nav-list.active {
+    display: flex; /* Exibe o menu quando a classe 'active' for adicionada */
+  }
+
+  nav a {
+    font-size: 18px; /* Ajusta o tamanho da fonte para telas menores */
+    color: #491673;
+  }
+      /*Home*/
+      .box-home {
+        width: 90%;
+        padding-left: 2%;
+    }
+
+    /*Home (parte2)*/
+    .sobre-vivo {
+        padding: 3%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .texto-vivo {
+        width: 100%;
+        padding-top: 10%;
+    }
+
+    .texto-vivo h1{
+        font-size: 50px;
+    }
+
+    .imagens-vivo {
+        display: flex; 
+        justify-content: flex-start; 
+        overflow-x: scroll;
+        gap: 15px;
+        width: 100%;
+        padding: 10px 0;
+        scroll-snap-type: x mandatory; /* Força o carrossel a "encaixar" nas imagens */
+    }
+
+    .imagens-vivo img {
+        flex-shrink: 0; /* Impede que as imagens encolham */
+        width: 100%; 
+        width: 225px; /* Largura máxima para as imagens */
+        height: auto;
+        scroll-snap-align: start; 
+    }
+
+    /*ODS*/
+    #ods {
+        padding: 0;
+        height: auto;
+        margin-top: 20%;
+    }
+    
+    #ods h1 {
+        text-align: center;
+        padding-top: 10%;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    #ods h1::after {
+        margin: 0 auto;
+        margin-bottom: 12%;
+    }
+
+    .imagens-ods {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagens-ods img {
+        width: 300px;
+    }
+
+    /*card*/
+    .ods-card {
+        width: 300px;
+    }
+
+    /*Estatisticas*/
+    #estatisticas {      
+        margin-top: 20%;
+    }
+
+    #estatisticas h1 {
+        font-size: 50px;
+    }
+
+    #estatisticas p {
+        width: 100%;
+    }
+
+    #estatisticas h1::after {
+        width: 60%; 
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sobre-vivo {
+      padding: 3%;
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+  .texto-vivo {
+      padding-top: 5%;
+      width: 90%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  /* Estilos para laptops e desktops pequenos */
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  /* Estilos para desktops médios e grandes */
+}
+
+@media (min-width: 1441px) {
+  /* Estilos para monitores de tela grande */
+}
+
