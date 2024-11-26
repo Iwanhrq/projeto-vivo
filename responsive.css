@@ -31,12 +31,11 @@
     /*Home*/
     .box-home {
         width: 90%;
-        padding-left: 5%;
+        padding-left: 2%;
     }
 
     /*Home (parte2)*/
     .sobre-vivo {
-        padding: 3%;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -47,7 +46,7 @@
     }
 
     .texto-vivo h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .imagens-vivo {
@@ -159,9 +158,17 @@
     }
 
     /*Projetos*/
+    #projeto {
+        margin-top: 20%;
+    }
+
+    #projeto h1 {
+        font-size: 40px;
+    }
     .projeto-p1 {
         width: 100%;
     }
+    
 
 }
 

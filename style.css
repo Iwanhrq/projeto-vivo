@@ -1,3 +1,19 @@
+:root {
+    /*cores*/
+    --main-color: #571089;
+    --color-black: black;
+    --color-white: #f9f9f9;
+
+    /*Fonte*/
+    --main-font: 'Calibri', sans-serif;
+
+    /*tamanhos*/
+    --h1-size: 60px;
+    --h3-size: 25px;
+    --p-size: 23px;
+    --button-text-size : 17px;
+}
+
 
 * {
     box-sizing: border-box;
@@ -7,22 +23,43 @@
 }
 
 
-/*geral*/
-#projeto h1::after, #estatisticas h1::after{
-    content: ""; /* Cria a linha abaixo do texto */
+
+
+/* Elementos com configurações padrões*/
+.btn{
+    font-size: var(--button-text-size);
+    background-color: var(--color-white);
+    color: var(--main-color);
+    border-radius: 15px;
+    margin-top: 5%;
+    height: 45px;
+    width: 145px; 
+}
+
+.decorated-title::after {
+    content: "";
     display: block;
-    width: 15%; 
+    width: 30%; 
     height: 7px;
-    background-color: #571089;
+    background-color: var(--main-color);
     margin-bottom: 3%;
 }
+
+.text-box {
+    font-family: var(--main-font);
+}
+
+.section-content{
+    padding: 5% 5%;
+}
+
 
 
 /* Cabeçalho */
 header {
     position: fixed;
     z-index: 100;
-    background-color: #fff;
+    background-color: var(--color-white);
     width: 100%;
     height: 60px;
     display: flex;
@@ -42,26 +79,27 @@ nav ul {
 }
 
 nav a {   
-    font-family: 'Calibri', sans-serif;
+    font-family: var(--main-font);
     font-size: 20px;
     color: #491673;
     text-decoration: none;
 }
 
 /*Dropdown*/
-/* Estilização do dropdown */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--color-white);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    padding-top: 16px;
 }
 
 .dropdown-content a {
+    font-size: 20px;
     color: black;
-    padding: 12px 16px;
+    padding: 10px 20px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -74,13 +112,17 @@ nav a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.dropbtn{
+    transition: color 0.5s ease;
+    color: var(--main-color);
+}
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+.dropbtn:hover {
+    color: var(--color-black);
 }
 
 /* Estilos para o ícone do hambúrguer (visível em telas grandes) */
-.hamburger-menu {
+.header-menu {
     display: none; /* Inicialmente escondido */
     flex-direction: column;
     gap: 5px;
@@ -89,7 +131,7 @@ nav a {
     height: 25px;
 }
 
-.hamburger-menu .bar {
+.header-menu .bar {
     width: 100%;
     height: 4px;
     background-color: #491673;
@@ -98,7 +140,7 @@ nav a {
 
 /*Home (parte1)*/
 #home {
-    font-family: 'Calibri', sans-serif;
+    font-family: var(--main-font);
     width: 100%;
 }
 
@@ -106,7 +148,7 @@ nav a {
     display: flex;
     align-items: center;
     height: 80vh;
-    background: linear-gradient(to right, #000000, #000000, #571089, #571089);
+    background: linear-gradient(to right, #000000, #000000, var(--main-color), var(--main-color));
 }
 
 .box-home {
@@ -126,51 +168,30 @@ nav a {
     font-size: 18px;
 }
 
-.box-home button {
-    font-size: 17px;
-    background-color: #fff;
-    color: #571089;
-    border-radius: 15px;
-    margin-top: 5%;
-    height: 45px;
-    width: 145px;      
-}
+
 
 /*Home (parte2)*/
 .sobre-vivo {
-    padding: 5%;
     display: flex;
-    align-items: center;
 }
 
 .texto-vivo {
-    font-family: 'Calibri', sans-serif;
     width: 50%;
 }
 
 .texto-vivo h1 {
-    color: #571089;
-    font-size: 60px;
+    color: var(--main-color);
+    font-size: var(--h1-size);
     position: relative; /* Necessário para posicionar o pseudo-elemento */
 }
 
-.texto-vivo h1::after {
-    content: ""; /* Cria a linha abaixo do texto */
-    display: block;
-    width: 60%; 
-    height: 7px;
-    background-color: #571089;
-    margin-bottom: 3%;
-}
-
-
 .texto-vivo p {
-    font-size: 23px;
+    font-size: var(--p-size);
 }
 
 .imagens-vivo {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     width: 50%;
     display: grid;
     grid-template-columns: repeat(2, min-content); /* Ajusta as colunas ao tamanho do conteúdo */
@@ -184,40 +205,34 @@ nav a {
 }
 
 .sobre-vivo button {
-    font-size: 17px;
-    background-color: #571089;
-    color: #fff;
-    border-radius: 15px;
-    margin-top: 5%;
-    height: 45px;
-    width: 145px;       
+    background-color: var(--main-color);
+    color: var(--color-white);    
 }
 
 /*Projeto*/
 #projeto {
-    font-family: 'Calibri', sans-serif;
-    width: 100%;
+    font-family: var(--main-font);
     min-height: 100vh;
-    padding: 5%;
+    width: 100%;
 }
 
 .projeto-p1 {
-    width: 50%;
+    width: 45%;
 }
 
 #projeto h1 {
-    color: #571089;
-    font-size: 60px;
+    color: var(--main-color);
+    font-size: var(--h1-size);
     position: relative; /* Necessário para posicionar o pseudo-elemento */
 }
 
 #projeto p {
-    font-size: 23px;
-    padding-bottom: 5%;
+    font-size: var(--p-size);
+    padding-bottom: 10%;
 }
 
 #projeto h3 {
-    font-size: 25px;
+    font-size: var(--h3-size);
     padding-top: 30px; /* Cria espaço para o círculo acima do título */
     position: relative; /* Permite o posicionamento absoluto do círculo */
 }
@@ -238,7 +253,7 @@ nav a {
 
 /*ODS*/
 #ods {
-    font-family: 'Calibri', sans-serif;
+    font-family: var(--main-font);
     padding: 5%;
     width: 100%;
     height: 100vh;
@@ -249,17 +264,12 @@ nav a {
 
 
 #ods h1 {
-    color: #571089;
-    font-size: 60px;
+    color: var(--main-color);
+    font-size: var(--h1-size);
     position: relative; /* Necessário para posicionar o pseudo-elemento */
 }
 
 #ods h1::after {
-    content: ""; /* Cria a linha abaixo do texto */
-    display: block;
-    width: 60%; /* Faz a linha ser mais larga que o texto (ajuste conforme necessário) */
-    height: 7px;
-    background-color: #571089; 
     margin-bottom: 8%;
 }
 
@@ -295,14 +305,14 @@ nav a {
 }
 
 .ods-card {
-    font-size: 20px;
+    font-size: var(--p-size);
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
-    background-color: #fff;
+    background-color: var(--color-white);
     border-radius: 16px;
     text-align: center;
     z-index: 1000;
@@ -329,7 +339,7 @@ nav a {
 }
 
 .close-btn:hover {
-    background-color: #571089; 
+    background-color: var(--main-color); 
 }
 
 
@@ -338,28 +348,26 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Calibri', sans-serif;
-    padding: 5%;
+    font-family: var(--main-font);
     width: 100%;
     min-height: 100vh;
 }
 
 #estatisticas h1 {
-    color: #571089;
-    font-size: 60px;
+    color: var(--main-color);
+    font-size: var(--h1-size);
     position: relative; /* Necessário para posicionar o pseudo-elemento */
 }
 
 #estatisticas p {
     width: 50%;
-    font-size: 23px;
+    font-size: var(--p-size);
     padding-bottom: 5%;
 }
 
 /*Error 504*/
 #error-504 {
-    background: linear-gradient(to left, #000000, #000000, #571089, #571089);
-    font-family: 'Calibri', sans-serif;
+    font-family: var(--main-font);
     padding: 5%;
     width: 100%;
     height: 100vh;
@@ -367,13 +375,14 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: var(--color-white)fff;
 }
 
 #error-504 h1 {
-    font-size: 60px;
+    font-size: var(--h1-size);
     padding-bottom: 3%;
     text-align: center;
+    color: var(--color-white);
 }
 
 .error504-video {
@@ -383,8 +392,7 @@ nav a {
 
 /*Padrões*/
 #padroes {
-    padding: 5%;
-    font-family: 'Calibri', sans-serif;
+    font-family: var(--main-font);
     width: 100%;
     height: 100vh;
 }
@@ -428,18 +436,18 @@ nav a {
 
 
 #padroes h1 {
-    color: #571089;
-    font-size: 60px;
+    color: var(--main-color);
+    font-size: var(--h1-size);
     position: relative; /* Necessário para posicionar o pseudo-elemento */
 }
 
 #padroes p {
-    font-size: 23px;
+    font-size: var(--p-size);
     padding-bottom: 5%;
 }
 
 #padroes h3 {
-    font-size: 25px;
+    font-size: var(--h3-size);
     padding-top: 30px; /* Cria espaço para o círculo acima do título */
     position: relative; /* Permite o posicionamento absoluto do círculo */
 }
@@ -461,18 +469,10 @@ nav a {
     padding-left: 2%;
 }
 
-#padroes h1::after {
-    content: ""; /* Cria a linha abaixo do texto */
-    display: block;
-    width: 50%; 
-    height: 7px;
-    background-color: #571089;
-    margin-bottom: 3%;
-}
 
 .quadrado {
     margin: 10px;             /* Espaçamento entre os quadrados */
-    background-color: #fff;   /* Fundo branco */
+    background-color: var(--color-white);   /* Fundo branco */
     flex: 1 1 calc(50% - 20px); /* Cada quadrado ocupará 50% da largura */
     display: flex;
     flex-direction: column;   /* Alinhar os elementos internamente na vertical */
@@ -483,4 +483,53 @@ nav a {
 
 
 
+.wrapper {
+    max-width: 100%;
+    margin: auto;
+    font-family: var(--main-font);
+}
 
+.collapsible {
+    margin-bottom: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.collapsible-head {
+    font-weight: bold;
+    background: var(--main-color);
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible-head:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.collapsible-text {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    background-color: #f9f9f9;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.collapsible-text h2 {
+    margin: 15px 0 10px;
+    color: #571089;
+}
+
+.collapsible-text p {
+    margin-bottom: 15px;
+}
+
+/* Quando ativado */
+.collapsible.open .collapsible-text {
+    max-height: 300px;
+    padding: 15px;
+}
