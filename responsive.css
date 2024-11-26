@@ -82,7 +82,7 @@
 
     #ods h1 {
         padding-top: 10%;
-        font-size: 45px;
+        font-size: 40px;
         width: 100%;
         line-height: 50px;
     }
@@ -116,7 +116,7 @@
     }
 
     #estatisticas h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     #estatisticas p {
@@ -130,13 +130,13 @@
 
     /*Error 504*/
     .error504-video {
-        width: 370px;
+        width: 350px;
         height: 270px;
     }
 
     /*Padrões*/
     #padroes h1 {
-        font-size: 50px;
+        font-size: 40px;
         line-height: 50px;
     }
     .p1-padroes {

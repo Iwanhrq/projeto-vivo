@@ -282,7 +282,7 @@ nav a {
 
 /*Error 504*/
 #error-504 {
-    background: linear-gradient(to right, #000000, #000000, #571089, #571089);
+    background: linear-gradient(to left, #000000, #000000, #571089, #571089);
     font-family: 'Calibri', sans-serif;
     padding: 5%;
     width: 100%;
