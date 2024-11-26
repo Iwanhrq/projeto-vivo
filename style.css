@@ -63,7 +63,7 @@ nav a {
 .gradiente {
     display: flex;
     align-items: center;
-    height: 70vh;
+    height: 80vh;
     background: linear-gradient(to right, #000000, #000000, #571089, #571089);
 }
 
@@ -305,7 +305,100 @@ nav a {
     height: 400px;
 }
 
+/*Padrões*/
+#padroes {
+    padding: 5%;
+    font-family: 'Calibri', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
+.p1-padroes {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.p2-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 300px; /* Ajuste conforme necessário */
+    position: relative; /* Para permitir o posicionamento absoluto da segunda imagem */
+}
+
+.p2-foto img {
+    width: 80%; /* Tamanho da imagem principal */
+}
+
+.p2-foto .ods-img-diagonal {
+    position: absolute; /* Posiciona a segunda imagem sobre a primeira */
+    top: 80%; /* Ajuste de posicionamento vertical da segunda imagem */
+    right: 55%;
+    width: 45%; /* Reduz o tamanho para criar contraste */
+    z-index: 1; /* Garante que a imagem diagonal fique em cima da original */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    border-radius: 8px; /* Bordas levemente arredondadas */
+}
 
 
 
+#padroes h1 {
+    color: #571089;
+    font-size: 60px;
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+}
 
+#padroes p {
+    font-size: 23px;
+    padding-bottom: 5%;
+}
+
+#padroes h3 {
+    font-size: 25px;
+    padding-top: 30px; /* Cria espaço para o círculo acima do título */
+    position: relative; /* Permite o posicionamento absoluto do círculo */
+}
+
+#padroes h3::before {
+    content: ''; 
+    position: absolute; 
+    top: -20px;
+    left: 0; 
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+    background-color: #491673;
+}
+
+
+#padroes ul {
+    padding-bottom: 5%;
+    padding-left: 2%;
+}
+
+#padroes h1::after {
+    content: ""; /* Cria a linha abaixo do texto */
+    display: block;
+    width: 50%; 
+    height: 7px;
+    background-color: #571089;
+    margin-bottom: 3%;
+}
+
+.quadrado {
+    padding: 20px;            /* Espaçamento interno */
+    margin: 10px;             /* Espaçamento entre os quadrados */
+    background-color: #fff;   /* Fundo branco */
+    flex: 1 1 calc(50% - 20px); /* Cada quadrado ocupará 50% da largura */
+    display: flex;
+    flex-direction: column;   /* Alinhar os elementos internamente na vertical */
+}

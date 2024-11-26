@@ -84,6 +84,7 @@
         padding-top: 10%;
         font-size: 45px;
         width: 100%;
+        line-height: 50px;
     }
 
     #ods h1::after {
@@ -132,6 +133,31 @@
         width: 370px;
         height: 270px;
     }
+
+    /*Padrões*/
+    #padroes h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .p1-padroes {
+        width: 100%;
+    }
+    .quadrado {
+        flex: 1 1 100%; /* Em telas menores, cada quadrado ocupará toda a largura */
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .p2-foto {
+        width: 100%;
+    }
+
+    .ods-img-diagonal {
+        display: none;
+    }
+
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
