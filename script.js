@@ -29,6 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
             img: "/assets/ods10.svg",
             text: "Reduzir as desigualdades dentro dos países e entre eles.",
         },
+        graph1: {
+            img: "/assets/provisorio.png",
+            text: "blablablabla",
+        },
+        graph2: {
+            img: "/assets/provisorio.png",
+            text: "blablablabla",
+        },
     };
 
     images.forEach((img) => {
