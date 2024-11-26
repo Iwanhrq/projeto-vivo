@@ -7,6 +7,17 @@
 }
 
 
+/*geral*/
+#projeto h1::after, #estatisticas h1::after{
+    content: ""; /* Cria a linha abaixo do texto */
+    display: block;
+    width: 15%; 
+    height: 7px;
+    background-color: #571089;
+    margin-bottom: 3%;
+}
+
+
 /* Cabeçalho */
 header {
     position: fixed;
@@ -182,6 +193,47 @@ nav a {
     width: 145px;       
 }
 
+/*Projeto*/
+#projeto {
+    font-family: 'Calibri', sans-serif;
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+}
+
+.projeto-p1 {
+    width: 50%;
+}
+
+#projeto h1 {
+    color: #571089;
+    font-size: 60px;
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+}
+
+#projeto p {
+    font-size: 23px;
+    padding-bottom: 5%;
+}
+
+#projeto h3 {
+    font-size: 25px;
+    padding-top: 30px; /* Cria espaço para o círculo acima do título */
+    position: relative; /* Permite o posicionamento absoluto do círculo */
+}
+
+#projeto h3::before {
+    content: ''; 
+    position: absolute; 
+    top: -20px;
+    left: 0; 
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+    background-color: #491673;
+}
+
+
 /*ODS*/
 #ods {
     font-family: 'Calibri', sans-serif;
@@ -302,15 +354,6 @@ nav a {
     padding-bottom: 5%;
 }
 
-#estatisticas h1::after {
-    content: ""; /* Cria a linha abaixo do texto */
-    display: block;
-    width: 15%; 
-    height: 7px;
-    background-color: #571089;
-    margin-bottom: 3%;
-}
-
 /*Error 504*/
 #error-504 {
     background: linear-gradient(to left, #000000, #000000, #571089, #571089);
@@ -426,10 +469,10 @@ nav a {
 }
 
 .quadrado {
-    padding: 20px;            /* Espaçamento interno */
     margin: 10px;             /* Espaçamento entre os quadrados */
     background-color: #fff;   /* Fundo branco */
     flex: 1 1 calc(50% - 20px); /* Cada quadrado ocupará 50% da largura */
     display: flex;
     flex-direction: column;   /* Alinhar os elementos internamente na vertical */
 }
+
