@@ -73,7 +73,7 @@
 
     /*ODS*/
     #ods {
-        padding: 0;
+        padding: 5%;
         height: auto;
         margin-top: 20%;
         display: flex;
@@ -82,8 +82,8 @@
 
     #ods h1 {
         padding-top: 10%;
-        font-size: 50px;
-        width: 90%;
+        font-size: 45px;
+        width: 100%;
     }
 
     #ods h1::after {
@@ -134,7 +134,7 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1200px) {
     .sobre-vivo {
         padding: 3%;
         display: flex;
@@ -145,7 +145,25 @@
         padding-top: 5%;
         width: 90%;
     }
-}
+
+    /*ODS*/
+    .imagens-ods {
+        gap: 20px; 
+    }
+
+    .imagens-ods img {
+        width: 250px;
+    }
+
+    /*Estatisticas*/
+    #estatisticas p {
+        width: 100%;
+    }
+
+    #estatisticas h1::after {
+        width: 30%; 
+    }
+
 
 @media (min-width: 1025px) and (max-width: 1200px) {
     /* Estilos para laptops e desktops pequenos */
