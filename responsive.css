@@ -82,8 +82,9 @@
 
     #ods h1 {
         padding-top: 10%;
-        font-size: 45px;
+        font-size: 40px;
         width: 100%;
+        line-height: 50px;
     }
 
     #ods h1::after {
@@ -115,7 +116,7 @@
     }
 
     #estatisticas h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     #estatisticas p {
@@ -129,9 +130,39 @@
 
     /*Error 504*/
     .error504-video {
-        width: 370px;
+        width: 350px;
         height: 270px;
     }
+
+    /*Padrões*/
+    #padroes h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .p1-padroes {
+        width: 100%;
+    }
+    .quadrado {
+        flex: 1 1 100%; /* Em telas menores, cada quadrado ocupará toda a largura */
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .p2-foto {
+        width: 100%;
+    }
+
+    .ods-img-diagonal {
+        display: none;
+    }
+
+    /*Projetos*/
+    .projeto-p1 {
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
