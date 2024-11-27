@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Variáveis para o hambúrguer e menu de navegação
+    // **Menu Hambúrguer**
     const hamburgerMenu = document.getElementById("header-menu");
     const navList = document.getElementById("nav-list");
 
     // Ação para exibir/ocultar o menu de navegação ao clicar no hambúrguer
     hamburgerMenu.addEventListener("click", () => {
-        navList.classList.toggle("active");  // Adiciona ou remove a classe 'active' no menu
+        navList.classList.toggle("active"); // Adiciona ou remove a classe 'active' no menu
     });
 
-    // Código existente para o card de "ODS" (sem mudanças)
+    // **Interatividade com ODS**
     const images = document.querySelectorAll(".ods-img");
     const card = document.getElementById("ods-card");
     const cardImg = document.getElementById("card-img");
@@ -66,15 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
         card.style.display = "none";
         overlay.style.display = "none";
     });
-});
 
-
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
+    // **Interatividade dos Collapsibles**
     const collapsibles = document.querySelectorAll('.collapsible');
 
     collapsibles.forEach((item) => {
