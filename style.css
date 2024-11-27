@@ -537,14 +537,14 @@ nav a {
     max-height: 300px;
     padding: 15px;
     display: flex;
-}
+ }
 
 .img-integrantes {
     margin-top: 2%;
     height: auto;
     background-color: #000000;
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%; /* Torna o contêiner redondo */
     overflow: hidden; /* Garante que a imagem também seja redonda */
 }
