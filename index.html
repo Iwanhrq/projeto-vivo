@@ -224,7 +224,7 @@
 
   <!-- Seção de Estatisticas -->
   <section id="estatisticas" class="section-content">
-    <h1 class="decorated-title">ESTATÍSTICAS</h1>
+    <h1 class="decorated-title">CONECTA</h1>
 
     <div class="overlay" id="overlay"></div>
 
@@ -416,18 +416,33 @@
   <!-- Seção do Infográfico -->
   <section id="infografico" class="section-content">
     <div class="img-infografico">
-      <img src="./assets/graficos/infografico.svg" />
+      <!-- Parte visível do infográfico -->
+      <div class="infografico-preview">
+        <img src="./assets/graficos/infografico.svg" alt="Parte do infográfico" />
+        <div class="hover-overlay">
+          <button id="open-full-infografico">Ver infográfico completo</button>
+        </div>
+      </div>
     </div>
     <p>
       Link para
-      <a href="" target="_blank">download</a>
+      <a href="./assets/graficos/infografico.svg" download>download</a>
     </p>
+  
+    <!-- Modal com o infográfico completo -->
+    <div id="modal-full-infografico" class="modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img src="./assets/graficos/infografico.svg" alt="Infográfico completo" />
+      </div>
+    </div>
   </section>
+  
 
   <!-- Footer -->
   <footer>
     <div class="footer-box">
-      <h3>Conecta Vivo</h3>
+      <h3>Vivo Conecta</h3>
       <a href="" target="_blank">Banco de Dados e Código para Análise</a>
       <a href="" target="_blank">Repositório do Site</a>
       <a href="" target="_blank">Infográfico</a>
