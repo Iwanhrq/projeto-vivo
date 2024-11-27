@@ -737,15 +737,32 @@ td.text-right {
   margin-top: 5%;
   width: 100%;
   min-height: 100vh;
+  color: var(--color-white);
+}
+
+#info-mapa h1 {
+  font-size: var(--h1-size);
+  position: relative;
 }
 
 #info-mapa p {
   width: 50%;
   font-size: var(--p-size);
-  color: var(--color-white);
   padding-bottom: 5%;
 }
 
+.mapa-img img {
+  width: 600px;
+}
+
+.decorated-title-branco::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 7px;
+  margin-bottom: 3%;
+  background-color: var(--color-white);
+}
 
 
 

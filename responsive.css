@@ -76,6 +76,7 @@
   #projeto h1 {
     font-size: 40px;
   }
+
   .projeto-p1 {
     width: 100%;
   }
@@ -107,7 +108,8 @@
     margin-bottom: 12%;
   }
 
-  .imagens-ods, .imagens-graficos {
+  .imagens-ods,
+  .imagens-graficos {
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -124,8 +126,6 @@
   }
 
   /*Section Estatisticas*/
-
-
   #estatisticas h1 {
     font-size: 40px;
   }
@@ -153,21 +153,46 @@
     height: 270px;
   }
 
+
+
+  /* Section Tabela*/
+  /*tabela*/
+  #tabela {
+    display: block;
+    overflow-x: auto;
+    /* Garante rolagem horizontal no container */
+    padding: 10px;
+    /* Espaçamento interno */
+  }
+
+  .table-fill {
+    width: 100%;
+    min-width: 900px;
+    height: auto;
+    margin-top: 50%;
+    display: block;
+  }
+
+
   /*Section Padrões*/
   #padroes h1 {
     font-size: 40px;
     line-height: 50px;
   }
+
   .p1-padroes {
     width: 100%;
   }
+
   .quadrado {
-    flex: 1 1 100%; /* Em telas menores, cada quadrado ocupará toda a largura */
+    flex: 1 1 100%;
+    /* Em telas menores, cada quadrado ocupará toda a largura */
   }
 
   .container {
     flex-direction: column;
   }
+
   .p2-foto {
     margin-top: 12%;
     margin-bottom: 12%;
@@ -178,20 +203,15 @@
     display: none;
   }
 
-  /* Section Tabela*/
-  /*tabela*/
-  #tabela {
-    display: block;
-    overflow-x: auto; /* Garante rolagem horizontal no container */
-    padding: 10px; /* Espaçamento interno */
+
+
+  /*Section Mapa*/
+  #info-mapa p {
+    width: 100%;
   }
 
-  .table-fill {
-    width: 100%;
-    min-width: 900px;
-    height: auto;
-    margin-top: 50%;
-    display: block;
+  #info-mapa h1 {
+    font-size: 40px;
   }
 
   /*Section Infografico*/
@@ -216,6 +236,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
+
   /*Home (parte2)*/
   .sobre-vivo {
     padding: 3%;
@@ -255,6 +276,5 @@
     display: block;
     width: 100%;
   }
+
 }
-
-
