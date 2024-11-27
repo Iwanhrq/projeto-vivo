@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Variáveis para o hambúrguer e menu de navegação
-    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const hamburgerMenu = document.getElementById("header-menu");
     const navList = document.getElementById("nav-list");
 
     // Ação para exibir/ocultar o menu de navegação ao clicar no hambúrguer
@@ -74,22 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const collapsibles = document.querySelectorAll('.collapsible');
 
-    collapsibles.forEach((item) => {
-        const head = item.querySelector('.collapsible-head');
 
-        head.addEventListener('click', () => {
-            // Fecha todos os outros dropdowns
-            collapsibles.forEach((el) => {
-                if (el !== item) {
-                    el.classList.remove('open');
-                }
-            });
 
-            // Alterna o dropdown clicado
-            item.classList.toggle('open');
-        });
-    });
-});
+
