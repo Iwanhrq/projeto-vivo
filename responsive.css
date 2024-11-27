@@ -90,7 +90,6 @@
   #ods {
     padding: 5%;
     height: auto;
-    margin-top: 20%;
     display: flex;
     align-items: center;
   }
@@ -125,9 +124,7 @@
   }
 
   /*Section Estatisticas*/
-  #estatisticas {
-    margin-top: 20%;
-  }
+
 
   #estatisticas h1 {
     font-size: 40px;
@@ -141,13 +138,14 @@
     width: 60%;
   }
 
-  .container-ods {
+  .container-estatisticas {
     flex-direction: column;
   }
 
-  .container-ods img {
+  .container-estatisticas img {
     width: 100%;
   }
+
 
   /*Section Video*/
   .error504-video {
