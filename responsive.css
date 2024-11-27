@@ -108,7 +108,7 @@
     margin-bottom: 12%;
   }
 
-  .imagens-ods {
+  .imagens-ods, .imagens-graficos {
     flex-direction: column;
     display: flex;
     justify-content: center;

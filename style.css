@@ -352,14 +352,19 @@ nav a:hover {
   margin-bottom: 8%;
 }
 
-.imagens-ods {
+/*Engloba imagens das ODS e a dos graficos*/
+.imagens-ods,
+.imagens-graficos {
   display: flex;
   justify-content: center;
   gap: 50px;
 }
-
 .imagens-ods img {
   cursor: pointer;
+}
+
+.imagens-ods img,
+.imagens-graficos img {
   width: 350px;
   height: auto; /* Mantém a proporção original */
 }
@@ -420,49 +425,6 @@ nav a:hover {
   background-color: var(--main-color);
 }
 
-
-/*Section Estatisticas*/
-#estatisticas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: var(--main-font);
-  margin-top: 5%;
-  width: 100%;
-  min-height: 100vh;
-}
-
-#estatisticas h1 {
-  color: var(--main-color);
-  font-size: var(--h1-size);
-  position: relative; /* Necessário para posicionar o pseudo-elemento */
-}
-
-#estatisticas p {
-  width: 50%;
-  font-size: var(--p-size);
-  padding-bottom: 5%;
-}
-
-.container-ods {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-.container-ods img {
-  cursor: pointer;
-  width: 400px;
-  height: auto; /* Mantém a proporção original */
-}
-
-.container-ods img:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-
 /*Section Video*/
 #error-504 {
   font-family: var(--main-font);
@@ -489,6 +451,58 @@ nav a:hover {
   height: 400px;
 }
 
+/*Section Estatisticas*/
+#estatisticas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--main-font);
+  margin-top: 5%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#estatisticas h1 {
+  color: var(--main-color);
+  font-size: var(--h1-size);
+  position: relative; /* Necessário para posicionar o pseudo-elemento */
+}
+
+#estatisticas p {
+  width: 50%;
+  font-size: var(--p-size);
+  padding-bottom: 5%;
+}
+
+.container-ods, .container-estatisticas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.container-ods img {
+    cursor: pointer;
+}
+
+.container-ods img, .container-estatisticas img {
+  width: 400px;
+  height: auto; /* Mantém a proporção original */
+}
+
+.container-ods img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/*Section Gráficos*/
+.grafico-resumo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /*Section Padrões*/
 #padroes {
@@ -572,8 +586,6 @@ nav a:hover {
   display: flex;
   flex-direction: column; /* Alinhar os elementos internamente na vertical */
 }
-
-
 
 /*Section Mapa*/
 #mapa {
