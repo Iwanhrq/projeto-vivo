@@ -19,15 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const odsData = {
         ods8: {
             img: "/assets/ods8.svg",
-            text: "Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo e trabalho decente para todos.",
+            text: "O ODS 8, trata de trabalho decente e crescimento econômico, é atendido ao facilitar que pequenos empreendedores e trabalhadores informais tenham acesso a ferramentas digitais, criando novas oportunidades de emprego.",
         },
         ods9: {
             img: "/assets/ods9.svg",
-            text: "Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação.",
+            text: "O ODS 9, voltado para a inovação e infraestrutura, é promovido com a construção de redes de telecomunicação modernas e resilientes, capazes de impulsionar o uso de serviços essenciais.",
         },
         ods10: {
             img: "/assets/ods10.svg",
-            text: "Reduzir as desigualdades dentro dos países e entre eles.",
+            text: "O ODS 10, que busca a redução das desigualdades, é contemplado ao conectar comunidades desassistidas, diminuindo as desigualdades regionais e sociais no acesso a tecnologias fundamentais para o desenvolvimento.",
         },
         graph1: {
             img: "/assets/provisorio.png",
