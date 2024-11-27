@@ -180,6 +180,7 @@
     }
     .p2-foto {
         margin-top: 12%;
+        margin-bottom: 12%;
         width: 100%;
     }
 
@@ -191,6 +192,15 @@
 
     /*Section Infografico*/
     .img-infografico {
+        width: 100%;
+    }
+    
+    .footer-box {
+        width: 100%;
+        align-items: center;
+    }
+
+    .social {
         width: 100%;
     }
     
