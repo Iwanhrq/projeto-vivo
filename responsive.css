@@ -178,9 +178,9 @@
     display: none;
   }
 
-  /* Section Mapa*/
+  /* Section Tabela*/
   /*tabela*/
-  #mapa {
+  #tabela {
     display: block;
     overflow-x: auto; /* Garante rolagem horizontal no container */
     padding: 10px; /* Espaçamento interno */
@@ -249,6 +249,11 @@
 
   #estatisticas h1::after {
     width: 30%;
+  }
+
+  .imagens-graficos {
+    display: block;
+    width: 100%;
   }
 }
 
