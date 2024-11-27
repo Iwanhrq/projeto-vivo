@@ -1,3 +1,5 @@
+         
+
 @media (min-width: 300px) and (max-width: 768px) {
     .header-menu {
         display: flex;
@@ -31,7 +33,7 @@
     /*Home*/
     .box-home {
         width: 90%;
-        padding-left: 2%;
+        padding-left: 5%;
     }
 
     /*Home (parte2)*/
@@ -70,7 +72,29 @@
         scroll-snap-align: start;
     }
 
-    /*ODS*/
+
+
+    /*Section Projeto*/
+    #projeto {
+        margin-top: 20%;
+    }
+
+    #projeto h1 {
+        font-size: 40px;
+    }
+    .projeto-p1 {
+        width: 100%;
+    }
+
+    .text-details {
+        font-size: 15px;
+        width: 80%;
+        padding-left: 5%;
+    }
+
+
+
+    /*Section ODS*/
     #ods {
         padding: 5%;
         height: auto;
@@ -109,7 +133,9 @@
         
     }
 
-    /*Estatisticas*/
+
+
+    /*Section Estatisticas*/
     #estatisticas {
         margin-top: 20%;
     }
@@ -127,13 +153,16 @@
     }
 
 
-    /*Error 504*/
+
+    /*Section Video*/
     .error504-video {
         width: 350px;
         height: 270px;
     }
 
-    /*Padrões*/
+
+
+    /*Section Padrões*/
     #padroes h1 {
         font-size: 40px;
         line-height: 50px;
@@ -147,35 +176,26 @@
 
     .container {
         flex-direction: column;
+   
     }
-
     .p2-foto {
+        margin-top: 12%;
         width: 100%;
     }
 
-    .ods-img-diagonal {
+    .img-diagonal {
         display: none;
     }
 
 
 
-    /*Projetos*/
-    #projeto {
-        margin-top: 20%;
-    }
-
-    #projeto h1 {
-        font-size: 40px;
-    }
-    .projeto-p1 {
+    /*Section Infografico*/
+    .img-infografico {
         width: 100%;
     }
+    
 
-    .text-details {
-        font-size: 15px;
-        width: 80%;
-        padding-left: 5%;
-    }
+  
     
 
 }
@@ -185,6 +205,8 @@
         padding: 3%;
         display: flex;
         flex-direction: column-reverse;
+        align-items: center;
+
     }
 
     .texto-vivo {
@@ -210,14 +232,13 @@
         width: 30%; 
     }
 
+
+
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
-    /* Estilos para laptops e desktops pequenos */
-}
 
 @media (min-width: 1201px) and (max-width: 1440px) {
-    /* Estilos para desktops médios e grandes */
+
 }
 
 @media (min-width: 1441px) {

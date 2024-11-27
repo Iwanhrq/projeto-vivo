@@ -14,15 +14,12 @@
     --button-text-size : 17px;
 }
 
-
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }
-
-
 
 
 /* Elementos com configurações padrões*/
@@ -34,6 +31,7 @@
     margin-top: 5%;
     height: 45px;
     width: 145px; 
+    cursor: pointer;
 }
 
 .decorated-title::after {
@@ -50,9 +48,8 @@
 }
 
 .section-content{
-    padding: 5% 5%;
+    padding: 5%;
 }
-
 
 
 /* Cabeçalho */
@@ -138,6 +135,8 @@ nav a {
     border-radius: 5px;
 }
 
+
+
 /*Home (parte1)*/
 #home {
     font-family: var(--main-font);
@@ -167,8 +166,6 @@ nav a {
     padding-top: 2%;
     font-size: 18px;
 }
-
-
 
 /*Home (parte2)*/
 .sobre-vivo {
@@ -209,7 +206,9 @@ nav a {
     color: var(--color-white);    
 }
 
-/*Projeto*/
+
+
+/*Section Projeto*/
 #projeto {
     font-family: var(--main-font);
     min-height: 100vh;
@@ -247,241 +246,6 @@ nav a {
     border-radius: 50%;
     background-color: #491673;
 }
-
-
-
-
-/*ODS*/
-#ods {
-    font-family: var(--main-font);
-    padding: 5%;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-#ods h1 {
-    color: var(--main-color);
-    font-size: var(--h1-size);
-    position: relative; /* Necessário para posicionar o pseudo-elemento */
-}
-
-#ods h1::after {
-    margin-bottom: 8%;
-}
-
-.imagens-ods {
-    display: flex;
-    justify-content: center; 
-    gap: 50px; 
-}
-
-.imagens-ods img {
-    width: 350px; 
-    height: auto; /* Mantém a proporção original */
-}
-
-.imagens-ods img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-
-/*card*/
-/* Fundo cinza semi-transparente */
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Cor cinza com opacidade */
-    z-index: 900; /* Camada abaixo do card */
-    backdrop-filter: blur(5px); /* Efeito de desfoque */
-}
-
-.ods-card {
-    font-size: var(--p-size);
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    background-color: var(--color-white);
-    border-radius: 16px;
-    text-align: center;
-    z-index: 1000;
-}
-
-.ods-card img {
-    width: 300px;
-    margin-top: -100px;
-}
-
-.card-info {
-    background-color: white;
-    padding: 20px;
-}
-
-.close-btn {
-    margin: 10px;
-    padding: 5px 10px;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.close-btn:hover {
-    background-color: var(--main-color); 
-}
-
-
-/*Estatísticas*/
-#estatisticas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: var(--main-font);
-    width: 100%;
-    min-height: 100vh;
-}
-
-#estatisticas h1 {
-    color: var(--main-color);
-    font-size: var(--h1-size);
-    position: relative; /* Necessário para posicionar o pseudo-elemento */
-}
-
-#estatisticas p {
-    width: 50%;
-    font-size: var(--p-size);
-    padding-bottom: 5%;
-}
-
-/*Error 504*/
-#error-504 {
-    font-family: var(--main-font);
-    padding: 5%;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-white)fff;
-}
-
-#error-504 h1 {
-    font-size: var(--h1-size);
-    padding-bottom: 3%;
-    text-align: center;
-    color: var(--color-white);
-}
-
-.error504-video {
-    width: 650px;
-    height: 400px;
-}
-
-/*Padrões*/
-#padroes {
-    font-family: var(--main-font);
-    width: 100%;
-    height: 100vh;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5%;
-}
-
-.p1-padroes {
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.p2-foto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    height: 300px; /* Ajuste conforme necessário */
-    position: relative; /* Para permitir o posicionamento absoluto da segunda imagem */
-}
-
-.p2-foto img {
-    width: 80%; /* Tamanho da imagem principal */
-}
-
-.p2-foto .ods-img-diagonal {
-    position: absolute; /* Posiciona a segunda imagem sobre a primeira */
-    top: 80%; /* Ajuste de posicionamento vertical da segunda imagem */
-    right: 55%;
-    width: 45%; /* Reduz o tamanho para criar contraste */
-    z-index: 1; /* Garante que a imagem diagonal fique em cima da original */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
-    border-radius: 8px; /* Bordas levemente arredondadas */
-}
-
-
-
-#padroes h1 {
-    color: var(--main-color);
-    font-size: var(--h1-size);
-    position: relative; /* Necessário para posicionar o pseudo-elemento */
-}
-
-#padroes p {
-    font-size: var(--p-size);
-    padding-bottom: 5%;
-}
-
-#padroes h3 {
-    font-size: var(--h3-size);
-    padding-top: 30px; /* Cria espaço para o círculo acima do título */
-    position: relative; /* Permite o posicionamento absoluto do círculo */
-}
-
-#padroes h3::before {
-    content: ''; 
-    position: absolute; 
-    top: -20px;
-    left: 0; 
-    width: 40px;
-    height: 40px; 
-    border-radius: 50%;
-    background-color: #491673;
-}
-
-
-#padroes ul {
-    padding-bottom: 5%;
-    padding-left: 2%;
-}
-
-
-.quadrado {
-    margin: 10px;             /* Espaçamento entre os quadrados */
-    background-color: var(--color-white);   /* Fundo branco */
-    flex: 1 1 calc(50% - 20px); /* Cada quadrado ocupará 50% da largura */
-    display: flex;
-    flex-direction: column;   /* Alinhar os elementos internamente na vertical */
-}
-
-
-
-
-
 
 .wrapper {
     max-width: 100%;
@@ -553,4 +317,268 @@ nav a {
     width: 100%;
     height: 100%;
     object-fit: cover; 
+}
+
+
+/*Section ODS*/
+#ods {
+    font-family: var(--main-font);
+    padding: 5%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#ods h1 {
+    color: var(--main-color);
+    font-size: var(--h1-size);
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+}
+
+#ods h1::after {
+    margin-bottom: 8%;
+}
+
+.imagens-ods {
+    display: flex;
+    justify-content: center; 
+    gap: 50px; 
+}
+
+.imagens-ods img {
+    cursor: pointer;
+    width: 350px; 
+    height: auto; /* Mantém a proporção original */
+}
+
+.imagens-ods img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+/*card*/
+/* Fundo cinza semi-transparente */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Cor cinza com opacidade */
+    z-index: 900; /* Camada abaixo do card */
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
+}
+
+.ods-card {
+    font-size: var(--p-size);
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: var(--color-white);
+    border-radius: 16px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.ods-card img {
+    width: 300px;
+    margin-top: -100px;
+}
+
+.card-info {
+    background-color: white;
+    padding: 20px;
+}
+
+.close-btn {
+    margin: 10px;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.close-btn:hover {
+    background-color: var(--main-color); 
+}
+
+
+
+/*Section Estatisticas*/
+#estatisticas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--main-font);
+    width: 100%;
+    min-height: 100vh;
+}
+
+#estatisticas h1 {
+    color: var(--main-color);
+    font-size: var(--h1-size);
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+}
+
+#estatisticas p {
+    width: 50%;
+    font-size: var(--p-size);
+    padding-bottom: 5%;
+}
+
+
+
+/*Section Video*/
+#error-504 {
+    font-family: var(--main-font);
+    padding: 5%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white)fff;
+}
+
+#error-504 h1 {
+    font-size: var(--h1-size);
+    padding-bottom: 3%;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.error504-video {
+    width: 650px;
+    height: 400px;
+}
+
+
+
+/*Section Padrões*/
+#padroes {
+    font-family: var(--main-font);
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5%;
+}
+
+.p1-padroes {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.p2-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 300px;
+    position: relative; 
+}
+
+.p2-foto img {
+    width: 80%; /* Tamanho da imagem principal */
+}
+
+.p2-foto .img-diagonal {
+    position: absolute; 
+    top: 80%; 
+    right: 55%;
+    width: 45%;
+    z-index: 1; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+    border-radius: 8px; 
+}
+
+#padroes h1 {
+    color: var(--main-color);
+    font-size: var(--h1-size);
+    position: relative; 
+}
+
+#padroes p {
+    font-size: var(--p-size);
+    padding-bottom: 5%;
+}
+
+#padroes h3 {
+    font-size: var(--h3-size);
+    padding-top: 30px; /* Cria espaço para o círculo acima do título */
+    position: relative; /* Permite o posicionamento absoluto do círculo */
+}
+
+#padroes h3::before {
+    content: ''; 
+    position: absolute; 
+    top: -20px;
+    left: 0; 
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;
+    background-color: #491673;
+}
+
+
+#padroes ul {
+    padding-bottom: 5%;
+    padding-left: 2%;
+}
+.quadrado {
+    margin: 10px;             /* Espaçamento entre os quadrados */
+    background-color: var(--color-white);   /* Fundo branco */
+    flex: 1 1 calc(50% - 20px); /* Cada quadrado ocupará 50% da largura */
+    display: flex;
+    flex-direction: column;   /* Alinhar os elementos internamente na vertical */
+}
+
+
+
+/*Section Mapa*/
+#mapa {
+    background-color: var(--main-color);
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/*Section Infografico*/
+#infografico {
+    font-family: var(--main-font);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.img-infografico {
+    width: 700px;
+}
+
+.img-infografico img {
+    width: 100%;
+}
+
+#infografico a {
+    cursor: pointer;
+    color: var(--main-color);
+    font-weight: bold;
 }
