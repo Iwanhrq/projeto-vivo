@@ -19,12 +19,10 @@
 
   #nav-list.active {
     display: flex;
-    /* Exibe o menu quando a classe 'active' for adicionada */
   }
 
   nav a {
     font-size: 18px;
-    /* Ajusta o tamanho da fonte para telas menores */
     color: #491673;
   }
 
@@ -143,6 +141,14 @@
     width: 60%;
   }
 
+  .container-ods {
+    flex-direction: column;
+  }
+
+  .container-ods img {
+    width: 100%;
+  }
+
   /*Section Video*/
   .error504-video {
     width: 350px;
@@ -177,28 +183,31 @@
   /* Section Mapa*/
   /*tabela*/
   #mapa {
-    display: block; 
+    display: block;
     overflow-x: auto; /* Garante rolagem horizontal no container */
     padding: 10px; /* Espaçamento interno */
   }
 
   .table-fill {
-    width: 100%; 
-    min-width: 900px; 
-    height: auto; 
+    width: 100%;
+    min-width: 900px;
+    height: auto;
     margin-top: 50%;
-    display: block; 
+    display: block;
   }
-
-  
-
 
   /*Section Infografico*/
   .img-infografico {
     width: 100%;
   }
 
+  footer {
+    background-image: none;
+    background-color: black;
+  }
+
   .footer-box {
+    background-color: black;
     width: 100%;
     align-items: center;
   }
@@ -209,6 +218,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
+  /*Home (parte2)*/
   .sobre-vivo {
     padding: 3%;
     display: flex;
@@ -221,7 +231,9 @@
     width: 90%;
   }
 
-  /*ODS*/
+
+
+  /*Section ODS*/
   .imagens-ods {
     gap: 20px;
   }
@@ -230,7 +242,9 @@
     width: 250px;
   }
 
-  /*Estatisticas*/
+
+
+  /*Section Estatisticas*/
   #estatisticas p {
     width: 100%;
   }
@@ -240,9 +254,4 @@
   }
 }
 
-@media (min-width: 1201px) and (max-width: 1440px) {
-}
 
-@media (min-width: 1441px) {
-  /* Estilos para monitores de tela grande */
-}

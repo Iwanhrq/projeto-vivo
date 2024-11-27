@@ -18,23 +18,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const odsData = {
         ods8: {
-            img: "/assets/ods8.svg",
+            img: "./assets/ods/ods8.svg",
             text: "O ODS 8, trata de trabalho decente e crescimento econômico, é atendido ao facilitar que pequenos empreendedores e trabalhadores informais tenham acesso a ferramentas digitais, criando novas oportunidades de emprego.",
         },
         ods9: {
-            img: "/assets/ods9.svg",
+            img: "./assets/ods/ods9.svg",
             text: "O ODS 9, voltado para a inovação e infraestrutura, é promovido com a construção de redes de telecomunicação modernas e resilientes, capazes de impulsionar o uso de serviços essenciais.",
         },
         ods10: {
-            img: "/assets/ods10.svg",
+            img: "./assets/ods/ods10.svg",
             text: "O ODS 10, que busca a redução das desigualdades, é contemplado ao conectar comunidades desassistidas, diminuindo as desigualdades regionais e sociais no acesso a tecnologias fundamentais para o desenvolvimento.",
         },
         graph1: {
-            img: "/assets/provisorio.png",
-            text: "blablablabla",
+            img: "./assets/graficos/vivo-geracoes.svg",
+            text: "blablablablablabla",
         },
         graph2: {
-            img: "/assets/provisorio.png",
+            img: "./assets/graficos/claro-geracoes.svg",
+            text: "blablablabla",
+        },
+        graph3: {
+            img: "./assets/graficos/tim-geracoes.svg",
             text: "blablablabla",
         },
     };
