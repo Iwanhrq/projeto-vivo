@@ -45,6 +45,7 @@
 
 .text-box {
     font-family: var(--main-font);
+    align-self: center;
 }
 
 .section-content{
@@ -211,7 +212,6 @@ nav a {
 /*Section Projeto*/
 #projeto {
     font-family: var(--main-font);
-    min-height: 100vh;
     width: 100%;
 }
 
@@ -219,6 +219,9 @@ nav a {
     width: 45%;
 }
 
+#projeto .section-content{
+    padding: 5% 5% 0;
+}
 #projeto h1 {
     color: var(--main-color);
     font-size: var(--h1-size);
@@ -272,7 +275,7 @@ nav a {
 
 .collapsible-head:hover {
     background-color: var(--color-white);
-    color: var(--color-black);
+    color: var(--main-color);
 }
 
 .collapsible-text {
@@ -325,7 +328,6 @@ nav a {
     font-family: var(--main-font);
     padding: 5%;
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -418,6 +420,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     font-family: var(--main-font);
+    margin-top: 5%;
     width: 100%;
     min-height: 100vh;
 }
@@ -440,6 +443,7 @@ nav a {
 #error-504 {
     font-family: var(--main-font);
     padding: 5%;
+    margin-top: 5%;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -467,12 +471,13 @@ nav a {
 #padroes {
     font-family: var(--main-font);
     width: 100%;
+    padding: 10% 5%;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5%;
+    padding-bottom: 5% 5% 0;
 }
 
 .p1-padroes {
@@ -484,7 +489,7 @@ nav a {
 
 .p2-foto {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     width: 40%;
     height: 300px;
@@ -539,7 +544,7 @@ nav a {
     padding-left: 2%;
 }
 .quadrado {
-    margin: 10px;             /* Espaçamento entre os quadrados */
+    margin: 10px 20px 10px 0;             /* Espaçamento entre os quadrados */
     background-color: var(--color-white);   /* Fundo branco */
     flex: 1 1 calc(50% - 20px); /* Cada quadrado ocupará 50% da largura */
     display: flex;
