@@ -169,8 +169,9 @@
     width: 100%;
     min-width: 900px;
     height: auto;
-    margin-top: 50%;
     display: block;
+    margin-top: 50%;
+    margin-bottom: 50%;
   }
 
 
