@@ -84,6 +84,10 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: black;
+}
+
 /*Dropdown*/
 .dropdown-content {
     display: none;
@@ -149,7 +153,7 @@ nav a {
     display: flex;
     align-items: center;
     height: 80vh;
-    background: linear-gradient(to right, #000000, #000000, var(--main-color), var(--main-color));
+    background: linear-gradient(to left, #000000, #000000, var(--main-color), var(--main-color));
 }
 
 .box-home {
@@ -297,6 +301,7 @@ nav a {
 }
 
 .text-details {
+    width: 90%;
     padding-left: 2%;
 }
 
