@@ -157,6 +157,8 @@
         display: none;
     }
 
+
+
     /*Projetos*/
     #projeto {
         margin-top: 20%;
@@ -167,6 +169,12 @@
     }
     .projeto-p1 {
         width: 100%;
+    }
+
+    .text-details {
+        font-size: 15px;
+        width: 80%;
+        padding-left: 5%;
     }
     
 
