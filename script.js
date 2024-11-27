@@ -74,7 +74,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const collapsibles = document.querySelectorAll('.collapsible');
 
+    collapsibles.forEach((item) => {
+        const head = item.querySelector('.collapsible-head');
 
+        head.addEventListener('click', () => {
+            // Fecha todos os outros dropdowns
+            collapsibles.forEach((el) => {
+                if (el !== item) {
+                    el.classList.remove('open');
+                }
+            });
 
-
+            // Alterna o dropdown clicado
+            item.classList.toggle('open');
+        });
+    });
+});
