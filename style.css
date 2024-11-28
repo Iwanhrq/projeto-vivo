@@ -124,7 +124,7 @@ nav a:hover {
 
 /* Estilos para o ícone do hambúrguer (visível em telas grandes) */
 .header-menu {
-  display: none; /* Inicialmente escondido */
+  display: none; 
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
@@ -187,7 +187,7 @@ nav a:hover {
 .texto-vivo h1 {
   color: var(--main-color);
   font-size: var(--h1-size);
-  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  position: relative; /* necessario para posicionar o pseudo-elemento */
 }
 
 .texto-vivo p {
@@ -202,7 +202,7 @@ nav a:hover {
   grid-template-columns: repeat(
     2,
     min-content
-  ); /* Ajusta as colunas ao tamanho do conteúdo */
+  ); 
   gap: 15px;
 }
 
@@ -233,7 +233,7 @@ nav a:hover {
 #projeto h1 {
   color: var(--main-color);
   font-size: var(--h1-size);
-  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  position: relative; 
 }
 
 #projeto p {
@@ -243,8 +243,8 @@ nav a:hover {
 
 #projeto h3 {
   font-size: var(--h3-size);
-  padding-top: 30px; /* Cria espaço para o círculo acima do título */
-  position: relative; /* Permite o posicionamento absoluto do círculo */
+  padding-top: 30px; 
+  position: relative; 
 }
 
 #projeto h3::before {
@@ -366,7 +366,7 @@ nav a:hover {
 .imagens-ods img,
 .imagens-graficos img {
   width: 350px;
-  height: auto; /* Mantém a proporção original */
+  height: auto; /* mantem a proporção original */
 }
 
 .imagens-ods img:hover {
@@ -587,7 +587,9 @@ nav a:hover {
   flex-direction: column; /* Alinhar os elementos internamente na vertical */
 }
 
-/*Section Mapa*/
+
+
+/*Section Tabela*/
 #tabela {
   background-color: #47126b;
   display: flex;
@@ -597,7 +599,7 @@ nav a:hover {
   font-family: var(--main-font);
 }
 
-/*** Table Styles **/
+/*** Table estilos **/
 div.table-title {
   display: block;
   margin: auto;
@@ -725,6 +727,8 @@ td.text-center {
 td.text-right {
   text-align: right;
 }
+
+
 
 
 /*Section Info-mapa*/
