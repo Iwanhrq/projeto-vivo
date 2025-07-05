@@ -27,9 +27,9 @@ Utilizar IA e análise de dados para priorizar áreas com maior potencial econô
 ## Equipe
 
 - Design do site, parte do desenvolvimento e revisão do relatório: **[Mariana Araripe](https://github.com/marianaararipe)**  
-- Desenvolvimento do site: Ivan Henrique Ferreira da Silva (eu)
+- Desenvolvimento do site: [Ivan Henrique](https://github.com/Iwanhrq)
 - Análise de dados: Pedro Filipini  
-- Relatório e edição de vídeo: Emile Nogueira
+- Relatório e edição de vídeo: [Emile Nogueira](https://github.com/EmileCristine)
 
 
 ## Aprendizados
