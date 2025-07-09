@@ -30,7 +30,7 @@ Utilizar **IA** e **análise de dados** para identificar e priorizar áreas com 
 
 - Design do site, parte do desenvolvimento e revisão do relatório: [Mariana Araripe](https://github.com/marianaararipe) 
 - Desenvolvimento do site: [Ivan Henrique](https://github.com/Iwanhrq)
-- Análise de dados: Pedro Filipini  
+- Análise de dados: [Pedro Filipini](https://github.com/pedrofilipini2007)
 - Relatório e edição de vídeo: [Emile Nogueira](https://github.com/EmileCristine)
 
 
