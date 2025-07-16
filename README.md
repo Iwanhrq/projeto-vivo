@@ -6,6 +6,8 @@ Projeto desenvolvido pela equipe **Error 504**, que conquistou o **3º lugar nac
   <img width="1200" height="722" alt="vivo" src="https://github.com/user-attachments/assets/df7adcdb-767c-44e9-8376-608f5acc6696" />
 </p>
 
+---
+
 ## Sobre o projeto
 
 O Desafio dos Dados é um concurso que desafia estudantes técnicos a aplicarem ciência de dados e tecnologia para resolver problemas reais.
