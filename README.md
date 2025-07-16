@@ -3,9 +3,8 @@
 Projeto desenvolvido pela equipe **Error 504**, que conquistou o **3º lugar nacional** (melhor equipe do estado de São Paulo 🥉) no **Desafio dos Dados: Dados Locais e Oportunidades Globais**, promovido pela **Vivo (Telefônica Brasil)** e **Tríade Educacional**.
 
 <p align="center">
-  <img width="1293" height="722" alt="vivo" src="https://github.com/user-attachments/assets/df7adcdb-767c-44e9-8376-608f5acc6696" />
+  <img width="1200" height="722" alt="vivo" src="https://github.com/user-attachments/assets/df7adcdb-767c-44e9-8376-608f5acc6696" />
 </p>
----
 
 ## Sobre o projeto
 
